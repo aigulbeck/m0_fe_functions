@@ -37,15 +37,23 @@ function square(number) {
 // Hint: You will only write one checkStock function that checks the quantity and then prints the corresponding statement.
 
 
-// Not completed exercise
-function checkStock(quantity, productName) {
 
-  console.log(quantity, "productName");
-  
-  
-  console.log(stockAvailability); 
+function checkStock(stockQuantity, stockName) {
+  if (stockQuantity >= 4) {
+    return(stockName + " is stocked");
+
+} else if (stockQuantity >= 1 && stockQuantity <= 3) {
+    return(stockName + " -" + " running LOW"); 
+ 
+} else {
+    return(stockName + " -" + " OUT of stock!");
 
 }
+}
+ console.log(checkStock(0, "Salsa"));
+  
+
+
 checkStock(4, "Coffee");
 // => "Coffee is stocked"
 
